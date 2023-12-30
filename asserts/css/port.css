@@ -10,46 +10,58 @@
 body {
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 0%, rgb(6, 114, 254) 100%);
 
+    .logo img {
+        width: 100px;
 
+        /* padding-bottom: 400px; */
+    }
 
-}
-
-.logo img {
-    width: 120px;
-    padding-bottom: 400px;
-
-}
-
-.navbar {
-    border-radius: 20px;
-    padding-top: 2vw;
-
-}
+    .navbar {
+        border-radius: 20px;
+        padding-top: vw;
+    }
 
 
 
-.navbar ul li {
-    float: left;
-    list-style: none;
+    .navbar ul li {
+        float: left;
+        list-style: none;
 
-}
+    }
 
-.navbar ul li a {
-    padding: 10px 20px 5px 5px;
-    text-decoration: none;
-    font-family: 'Josefin Sans', sans-serif;
-    color: azure;
-    font-size: larger;
-    font-weight: bolder;
-
-}
-
-.navbar ul li a:hover {
-    color: #06098d;
-    transition: .9s;
-
-}
+    .navbar ul li a {
+        padding: 10px 20px 5px 5px;
+        text-decoration: none;
+        font-family: 'Josefin Sans', sans-serif;
+        color: azure;
+        font-size: larger;
+        font-weight: bolder;
 
 
+    }
+
+    .navbar ul li a:hover {
+        color: #06098d;
+        transition: .9s;
+
+    }
+    .navbar ul li a img{
+        size: 5px;
+    }
 
 
+
+
+
+    .back {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 75vh;
+    }
+
+    .back img {
+        position: fixed;
+        width: 40%;
+
+    }
