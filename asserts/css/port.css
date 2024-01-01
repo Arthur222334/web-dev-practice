@@ -1,67 +1,143 @@
 .container {
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
     justify-content: space-between;
-    border-radius: 40px;
+    border-radius: 400px;
+    -webkit-border-radius: 400px;
+    -moz-border-radius: 400px;
+    -ms-border-radius: 400px;
+    -o-border-radius: 400px;
+}
+
+
+
+body {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 0%, rgb(6, 114, 254) 100%);
+}
+
+.logo img {
+    width: 5vw;
+}
+
+
+
+
+
+.logo img:hover {
+    transition: all 0.5s;
+    color:aqua;
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    -webkit-transition: all 0.5S;
+    -moz-transition: all 0.5S;
+    -ms-transition: all 0.5S;
+    -o-transition: all 0.5S;
+}
+
+.navbar {
+    border-radius: 5vw;
+    -webkit-border-radius: 5vw;
+    -moz-border-radius: 5vw;
+    -ms-border-radius: 5vw;
+    -o-border-radius: 5vw;
+}
+
+
+
+.navbar ul li {
+    float: left;
+    list-style: none;
+
+}
+
+.headnav {
+    padding-top: 0.5vw;
+}
+
+.navbar ul li a {
+
+    padding: 0.7vw;
+
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    color: azure;
+    font-size: larger;
+    font-weight: bolder;
+
+
+}
+
+.navbar ul li a:hover {
+    color: #06098d;
+    transition: .9s;
+
+}
+
+
+
+
+
+
+
+.back {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.back img {
+
+    width: 90%;
+
+    margin-right: 5vw;
+
 
 
 
 }
 
-body {
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 0%, rgb(6, 114, 254) 100%);
+.back .texx {
+    align-self: center;
+    margin-left: 2vw;
 
-    .logo img {
-        width: 100px;
+}
 
-        /* padding-bottom: 400px; */
+
+
+.back h1 {
+    color: aliceblue;
+    font-size: 7vw;
+
+    font-family: "Montserrat", sans-serif;
+
+
+}
+
+
+.back h1 span {
+    color:#2907e9;
+
+
+}
+
+
+
+
+
+
+@media screen and (min-width:600px) {
+
+    .back img .back h1 .back h1 span {
+        max-width: 70%;
     }
 
-    .navbar {
-        border-radius: 20px;
-        padding-top: vw;
-    }
+}
 
-
-
-    .navbar ul li {
-        float: left;
-        list-style: none;
-
-    }
-
-    .navbar ul li a {
-        padding: 10px 20px 5px 5px;
-        text-decoration: none;
-        font-family: 'Josefin Sans', sans-serif;
-        color: azure;
-        font-size: larger;
-        font-weight: bolder;
-
-
-    }
-
-    .navbar ul li a:hover {
-        color: #06098d;
-        transition: .9s;
-
-    }
-    .navbar ul li a img{
-        size: 5px;
-    }
-
-
-
-
-
-    .back {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 75vh;
-    }
-
+@media screen and (min-width:900px) {
     .back img {
-        position: fixed;
-        width: 40%;
-
+        max-width: 50%;
     }
+
+}
