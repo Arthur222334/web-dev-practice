@@ -122,23 +122,85 @@ body {
 
 }
 
+.Frame39 {
+   
+    height: 147px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+margin: auto;
+}
+
+.Alifreza {
+    color: white;
+    font-size: 26px;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 28px;
+    word-wrap: break-word;
+}
+
+
+.Frame38 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 114px;
+}
+
+.InfoLink,
+.SocialLink {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 26px;
+}
+
+.Information,
+.SocialMedia {
+    color: white;
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+.Link {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.Link div {
+    color: #faf5f5;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+
 @media screen and (min-width: 600px) {
 
     .back img,
     .back h1,
-    .back h1 span {
+    .back h1 span 
+    footer {
         max-width: 70%;
     }
 }
 
 @media screen and (min-width: 900px) {
-    
+
 
     .back img,
     .back h1,
-    .back h1 span {
+    .back h1 span 
+    html{
         max-width: 50%;
     }
 }
-
-
